@@ -58,5 +58,5 @@ end
 #end
 
 def add_s(array)
-  array.each_with_index.collection {|word, i| i != 1 ? word += "s" : word}
+  array.each_with_index.collect {|word, i| i != 1 ? word += "s" : word}
 end
