@@ -56,3 +56,6 @@ def add_s(array)
     end
   end
 end
+
+def add_s(array)
+  array.each_with_index.collection {|w, i| i != 1 ? w += "s" : w}
