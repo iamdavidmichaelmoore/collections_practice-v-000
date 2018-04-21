@@ -52,7 +52,7 @@ def add_s(array)
     if index != 1
       element += "s"
     else
-      element.delete_at(1)
+      element.delete
     end
   end
 end
