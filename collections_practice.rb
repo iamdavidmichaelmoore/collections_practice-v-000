@@ -37,7 +37,7 @@ def kesha_maker(array)
 end
 
 def find_a(array)
-  a = array.inject do |memo, word|
+  a = array.inject([]) do |memo, word|
     arrayfi = word.split(//)
     if arrayfi[0] == "a"
       memo << arrayfi.join("")
