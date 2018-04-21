@@ -38,8 +38,6 @@ end
 
 def find_a(array)
   array.inject([]) do |new_array, eval|
-    if eval[0] == "a"
-      new_array << eval
-    end
+      new_array << eval if eval[0] == "a"
   end
 end
