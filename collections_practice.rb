@@ -40,7 +40,7 @@ def find_a(array)
   a = array.inject do |memo, word|
     arrayfi = word.split(//)
     if arrayfi[0] == "a"
-      memo << word.join("")
+      memo << word.join(",")
     end
     memo
   end
