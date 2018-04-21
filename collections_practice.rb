@@ -42,6 +42,7 @@ def find_a(array)
     if arrayfi[0] == "a"
       memo << word
     end
-  end
     memo
+  end
+    a
 end
