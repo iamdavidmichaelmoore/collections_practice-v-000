@@ -47,15 +47,9 @@ def find_a(array)
     a
 end
 
-#def add_s(array)
-#  array.each_with_index.collect do |element, index|
-#    if index != 1
-#      element += "s"
-#    else
-#      element
-#    end
-#  end
-#end
+def sum_array(array)
+  a = array.inject {|sum, n| sum + n}
+end
 
 def add_s(array)
   array.each_with_index.collect {|word, i| i != 1 ? word += "s" : word}
