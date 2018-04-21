@@ -46,3 +46,7 @@ def find_a(array)
   end
     a
 end
+
+def add_s(array)
+  
+end
