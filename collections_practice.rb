@@ -36,12 +36,11 @@ def kesha_maker(array)
   keshafied
 end
 
-#def find_a(array)
-#  array.inject([]) do |new_array, eval|
-#      new_array << eval if eval[0] == "a"
-#  end
-#end
-
 def find_a(array)
-  array.collect {|collection_a| collection_a[0] == "/[Aa]/"}
+  a = array.inject do |memo, word|
+    arrayfi = word.split(//)
+    if arrayfi[0] == "a"
+      memo << word
+    end
+    memo
 end
