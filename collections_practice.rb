@@ -48,5 +48,5 @@ def find_a(array)
 end
 
 def add_s(array)
-  array.each_with_index.collect {|element, index| index != 2 element.push("s") }
+  array.each_with_index.collect {|element, index| index != 2 element.push("s")}
 end
