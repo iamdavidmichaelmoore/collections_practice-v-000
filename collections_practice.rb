@@ -41,3 +41,7 @@ def find_a(array)
       new_array << eval if eval[0] == "a"
   end
 end
+
+def find_a(array)
+  array.collect {|collection_a| collection_a[0] == "/[Aa]/"}
+end
